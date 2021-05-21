@@ -1,0 +1,41 @@
+$keycolor: rgb(236, 223, 229);
+$backcolor: rgba(151, 149, 149, 0.8);
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 40px 40px;
+  margin-top: 50px;
+  color: rgb(49, 48, 48);
+}
+
+h1 {
+  margin-top: 20px;
+  font: 800 2.5rem "Roboto", sans-serif;
+  text-decoration: underline $keycolor;
+
+  color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-size: 22px;
+  background: $backcolor;
+}
+
+pre {
+  padding: 5px;
+}
+.logo {
+  background: url(../img/logo.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 250px;
+  height: 100px;
+}
