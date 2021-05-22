@@ -32,7 +32,7 @@ describe("Testing polarity translation functionality", () => {
   test("Testing the polarityChecker() function", () => {
     expect(getPolarity("N+")).toBe("strong negative");
   });
-
+  
   test("Testing the polarityChecker() function", () => {
     expect(getPolarity("NONE")).toBe("no sentiment");
   });
