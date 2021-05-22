@@ -79,3 +79,8 @@ In the 2nd run:
 `npm start` | Run project
 
 It runs the part of the requests page to the meaning cloud API and getting responses from it.
+
+Preview of the app
+
+![Screenshot_1](https://user-images.githubusercontent.com/24371316/119221411-fa106900-baf7-11eb-88f0-a4c03349e103.png)
+
