@@ -3,41 +3,41 @@
 import "babel-polyfill";
 
 // Import the js file to test
-import { polarityChecker } from "../src/client/js/formHandler";
+import { getPolarity } from "../src/client/js/formHandler";
 
 // The describe() function takes two arguments - a string description, and a test suite as a callback function.
 // A test suite may contain one or more related tests
 describe("Testing polarity translation functionality", () => {
   // The test() function has two arguments - a string description, and an actual test as a callback function.
-  test("Testing the polarityChecker() function", () => {
+  test("Testing the getPolarity() function", () => {
     // Define the input for the function, if any, in the form of variables/array
     // Define the expected output, if any, in the form of variables/array
     // The expect() function, in combination with a Jest matcher, is used to check if the function produces the expected output
     // The general syntax is `expect(myFunction(arg1, arg2, ...)).toEqual(expectedValue);`, where `toEqual()` is a matcher
-    expect(polarityChecker("P+")).toBe("strong positive");
+    expect(getPolarity("P+")).toBe("strong positive");
   });
 
   test("Testing the polarityChecker() function", () => {
-    expect(polarityChecker("P")).toBe("positive");
+    expect(getPolarity("P")).toBe("positive");
   });
 
   test("Testing the polarityChecker() function", () => {
-    expect(polarityChecker("NEW")).toBe("neutral");
+    expect(getPolarity("NEW")).toBe("neutral");
   });
 
   test("Testing the polarityChecker() function", () => {
-    expect(polarityChecker("N")).toBe("negative");
+    expect(getPolarity("N")).toBe("negative");
   });
 
   test("Testing the polarityChecker() function", () => {
-    expect(polarityChecker("N+")).toBe("strong negative");
+    expect(getPolarity("N+")).toBe("strong negative");
   });
 
   test("Testing the polarityChecker() function", () => {
-    expect(polarityChecker("NONE")).toBe("no sentiment");
+    expect(getPolarity("NONE")).toBe("no sentiment");
   });
 
   test("Testing the polarityChecker() function", () => {
-    expect(polarityChecker).toBeDefined();
+    expect(getPolarity).toBeDefined();
   });
 });
